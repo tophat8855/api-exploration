@@ -3,7 +3,7 @@ class MovieSearchController < ApplicationController
   end
 
   def results
-    response = RestClient.get "http://www.omdbapi.com/?s=#{params[:title]}"
+    response = RestClient.get "http://www.omdbapi.com/?s=#{params[:search]}"
     @results = JSON.parse(response.body)
   end
 end

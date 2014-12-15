@@ -1,7 +1,7 @@
 <h1>Movie Search</h1>
 
 <%= form_tag("/results", method: "get") do %>
-  <%= label_tag(:title, "Search for:") %>
-  <%= text_field_tag(:title) %>
+  <%= label_tag(:search, "Search for:") %>
+  <%= text_field_tag(:search) %>
   <%= submit_tag("Search") %>
 <% end %>
