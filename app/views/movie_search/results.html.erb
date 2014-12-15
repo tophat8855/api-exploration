@@ -1,1 +1,7 @@
-This page intentionally left blank.
+<h1>Results</h1>
+
+<% @results["Search"].each do |movie| %>
+  <ul>
+    <li><%= movie["Title"] %></li>
+  </ul>
+<% end %>
