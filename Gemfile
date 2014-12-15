@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 
 gem 'rest-client'
 gem 'pry'
+
+gem 'better_errors'
