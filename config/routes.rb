@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 root 'movie_search#index'
 
 get '/results' => 'movie_search#results'
+get '/moviedata' => 'movie_search#data'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
